@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>yyss.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bababa;}
+.s3 { color: #a5c261;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+yyss.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html&gt;</span>
+
+<span class="s0">&lt;head&gt;</span>
+  <span class="s0">&lt;title&gt;</span><span class="s1">Y Y S的个人网页</span><span class="s0">&lt;/title&gt;</span>
+  <span class="s0">&lt;style&gt;</span>
+      <span class="s1">body {</span>
+      <span class="s1">background-color: pink; /* 设置页面背景颜色为粉色 */</span>
+      <span class="s1">margin-top: 20px; /* 为整个页面添加上边距 */</span>
+      <span class="s1">height: 100vh; /* 设置页面高度为视口高度 */</span>
+      <span class="s1">display: flex; /* 使用flex布局 */</span>
+      <span class="s1">justify-content: space-between; /* 内容左右分隔 */</span>
+      <span class="s1">position: relative; /* 相对定位以便绝对定位子元素 */</span>
+    <span class="s1">}</span>
+
+     <span class="s1">.background-image {</span>
+      <span class="s1">position: absolute; /* 绝对定位背景图案 */</span>
+      <span class="s1">bottom: 0; /* 将图案放在页面的底部 */</span>
+      <span class="s1">right: 0; /* 将图案放在页面的右侧 */</span>
+      <span class="s1">width: 50%; /* 设置图案的宽度为页面的四分之一 */</span>
+      <span class="s1">height: 40%; /* 设置图案的高度为页面的四分之一 */</span>
+      <span class="s1">background-image: url('file:///C:/Users/syy/Desktop/熊二.jpg'); /* 使用新的绝对路径 */</span>
+      <span class="s1">background-repeat: no-repeat; /* 防止图案重复 */</span>
+      <span class="s1">background-size: cover; /* 确保图案覆盖整个元素并保持比例 */</span>
+      <span class="s1">background-position: center; /* 图案居中显示 */</span>
+      <span class="s1">z-index: -1; /* 使背景图案位于其他内容下方 */</span>
+    <span class="s1">}</span>
+
+     <span class="s1">.content {</span>
+      <span class="s1">display: flex; /* 使用flex布局 */</span>
+      <span class="s1">flex-direction: column; /* 垂直排列内容 */</span>
+      <span class="s1">margin-right: 20px; /* 为内容添加右边距以提供空间 */</span>
+    <span class="s1">}</span>
+
+      <span class="s1">h1 {</span>
+      <span class="s1">text-align: center; /*标题居中*/</span>
+      <span class="s1">font-size: 5em; /* 将h1字体大小设置为当前的五倍 */</span>
+      <span class="s1">letter-spacing: 2em; /* 为每个字之间添加间距 */</span>
+    <span class="s1">}</span>
+
+    <span class="s1">h2 {</span>
+      <span class="s1">margin-left: 20px; /* 为h2添加左边距 */</span>
+      <span class="s1">text-align: center; /* 标题居中 */</span>
+      <span class="s1">font-size: 3em; /* 将h1字体大小设置为当前的三倍 */</span>
+    <span class="s1">}</span>
+
+    <span class="s1">h3 {</span>
+      <span class="s1">font-size: 3em; /* 将h3字体大小放大一倍 */</span>
+      <span class="s1">margin: 100; /* 去掉默认的外边距 */</span>
+      <span class="s1">padding: 15px 0; /* 添加上下内边距 */</span>
+    <span class="s1">}</span>
+    <span class="s1">h4 {</span>
+      <span class="s1">font-size: 3em; /* 将h3字体大小放大一倍 */</span>
+      <span class="s1">margin: 100; /* 去掉默认的外边距 */</span>
+      <span class="s1">padding: 15px 0; /* 添加上下内边距 */</span>
+    <span class="s1">}</span>
+    <span class="s1">h5 {</span>
+      <span class="s1">font-size: 3em; /* 将h3字体大小放大一倍 */</span>
+      <span class="s1">margin: 200; /* 去掉默认的外边距 */</span>
+      <span class="s1">padding: 300px 0; /* 添加上下内边距 */</span>
+    <span class="s1">}</span>
+    <span class="s1">.dishes {</span>
+      <span class="s1">display: flex;  */</span>
+      <span class="s1">margin-left: 500px;  */</span>
+      <span class="s1">gap: 30px;  */</span>
+      <span class="s1">flex-direction: column;  */</span>
+      <span class="s1">align-items: flex-start; */</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.dish-item {</span>
+      <span class="s1">display: flex; /* 使用flex布局 */</span>
+      <span class="s1">flex-direction: column; /* 垂直排列 */</span>
+      <span class="s1">align-items: center; /* 中心对齐 */</span>
+      <span class="s1">margin-bottom: 20px; /* 为每个菜品添加底部间距 */</span>
+    <span class="s1">}</span>
+
+       <span class="s1">.dish-image {</span>
+      <span class="s1">width: 600px; /* 设置图片宽度为300px */</span>
+      <span class="s1">height: 600px; /* 设置图片高度为300px，形成正方形 */</span>
+      <span class="s1">border: 2px solid yellow; /* 图片边框为黄色 */</span>
+      <span class="s1">border-radius: 5px; /* 添加圆角 */</span>
+      <span class="s1">margin-top: 10px; /* 图片与标题之间的间距 */</span>
+      <span class="s1">object-fit: cover; /* 保持图片比例并覆盖整个容器 */</span>
+      <span class="s1">left: 700px;  */</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.contact {</span>
+      <span class="s1">text-align: center; /* 将联系信息居中 */</span>
+      <span class="s1">margin-left: 60px; /* 为联系信息添加左边距 */</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.video-container {</span>
+      <span class="s1">width: 650px; /* 将视频容器宽度改为600px */</span>
+      <span class="s1">height: 610px; /* 设置视频高度为300px，形成正方形 */</span>
+      <span class="s1">margin-right: 600px; /* 视频左边距 */</span>
+      <span class="s1">position: absolute; /* 绝对定位视频容器 */</span>
+      <span class="s1">margin-top: 20px; /* 添加上边距以分隔视频 */</span>
+      <span class="s1">top: 1300px; /* 根据需要调整视频容器的顶部位置 */</span>
+      <span class="s1">right: 10px;  */</span>
+    <span class="s1">}</span>
+
+    <span class="s1">video {</span>
+      <span class="s1">width: 100%; /* 视频宽度为容器的100% */</span>
+      <span class="s1">height: 100%; /* 视频高度为容器的100% */</span>
+      <span class="s1">border-radius: 5px; /* 圆角 */</span>
+    <span class="s1">}</span>
+  <span class="s0">&lt;/style&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+
+<span class="s0">&lt;body&gt;</span>
+  <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;content&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;h1&gt;</span><span class="s1">奇奇妙妙美食屋</span><span class="s0">&lt;/h1&gt;</span>
+
+    <span class="s0">&lt;h2&gt;</span><span class="s1">菜品介绍</span><span class="s0">&lt;/h2&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dishes&quot;</span><span class="s0">&gt;</span>
+      <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dish-item&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;h3&gt;</span><span class="s1">螺蛳粉</span><span class="s0">&lt;/h3&gt;</span>
+        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;file:///C:\Users\syy\Desktop\螺蛳粉.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;螺蛳粉&quot; </span><span class="s2">class</span><span class="s3">=&quot;dish-image&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">经典的螺蛳粉，独特的辣味和丰富的配料，让你回味无穷。</span><span class="s0">&lt;/p&gt;</span>
+      <span class="s0">&lt;/div&gt;</span>
+      <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dish-item&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;h3&gt;</span><span class="s1">葱烧虾仁</span><span class="s0">&lt;/h3&gt;</span>
+        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;file:///C:/Users/syy/Desktop/葱烧虾仁.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;葱烧虾仁&quot; </span><span class="s2">class</span><span class="s3">=&quot;dish-image&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">色泽红亮，口感鲜嫩的虾仁，是绝佳的下饭菜。</span><span class="s0">&lt;/p&gt;</span>
+      <span class="s0">&lt;/div&gt;</span>
+      <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dish-item&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;h3&gt;</span><span class="s1">豆干腊肉</span><span class="s0">&lt;/h3&gt;</span>
+        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;file:///C:/Users/syy/Desktop/豆干腊肉.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;豆干腊肉&quot; </span><span class="s2">class</span><span class="s3">=&quot;dish-image&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">香辣可口，风味独特的腊肉，给你带来不一样的味觉体验。</span><span class="s0">&lt;/p&gt;</span>
+      <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+
+     <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;video-container&quot;</span><span class="s0">&gt;</span>
+       <span class="s0">&lt;h4&gt;</span><span class="s1">制作过程</span><span class="s0">&lt;/h4&gt;</span>
+        <span class="s0">&lt;video </span><span class="s2">controls</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;source </span><span class="s2">src</span><span class="s3">=&quot;file:///C:/Users/syy/Desktop/制作视频.mp4&quot; </span><span class="s2">type</span><span class="s3">=&quot;video/mp4&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/video&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;contact&quot;</span><span class="s0">&gt;</span>
+      <span class="s0">&lt;h5&gt;</span><span class="s1">美食制作投稿</span><span class="s0">&lt;/h5&gt;</span>
+      <span class="s0">&lt;form&gt;</span>
+        <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;name&quot;</span><span class="s0">&gt;</span><span class="s1">姓名:</span><span class="s0">&lt;/label&gt;</span>
+        <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;text&quot; </span><span class="s2">id</span><span class="s3">=&quot;name&quot; </span><span class="s2">name</span><span class="s3">=&quot;name&quot; </span><span class="s2">required</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;email&quot;</span><span class="s0">&gt;</span><span class="s1">电子邮件:</span><span class="s0">&lt;/label&gt;</span>
+        <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;email&quot; </span><span class="s2">id</span><span class="s3">=&quot;email&quot; </span><span class="s2">name</span><span class="s3">=&quot;email&quot; </span><span class="s2">required</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;submit&quot; </span><span class="s2">value</span><span class="s3">=&quot;提交&quot;</span><span class="s0">&gt;</span>
+      <span class="s0">&lt;/form&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+  <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+
+<span class="s0">&lt;/html&gt;</span></pre>
+</body>
+</html>
